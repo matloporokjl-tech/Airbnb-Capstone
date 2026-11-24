@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+uploads/*
+!uploads/.gitkeep
+.DS_Store
+# Ignore uploaded files in all uploads folders
+**/uploads/*
+!**/uploads/.gitkeep
+
+# One-time local password reset helper
+server/resetAdminPassword.js

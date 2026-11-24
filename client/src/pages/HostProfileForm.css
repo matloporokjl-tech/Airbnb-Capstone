@@ -1,0 +1,136 @@
+.host-profile-section {
+  margin-bottom: 35px;
+  padding: 25px;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: white;
+}
+
+.host-profile-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.host-profile-heading h2 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+
+.host-profile-heading p {
+  margin: 0;
+  color: #717171;
+  font-size: 14px;
+}
+
+.host-profile-preview {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f1f1f1;
+  color: #555;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.host-profile-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.host-profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.host-profile-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.host-profile-form input,
+.host-profile-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background: white;
+  color: #222;
+  font: inherit;
+  font-size: 14px;
+}
+
+.host-profile-form input:disabled {
+  background: #f3f3f3;
+  color: #777;
+}
+
+.host-profile-form textarea {
+  resize: vertical;
+}
+
+.host-profile-form small {
+  color: #717171;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.host-profile-form button {
+  justify-self: start;
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #ff385c;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.host-profile-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.host-profile-message {
+  margin: 0 0 18px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.host-profile-message.error {
+  background: #fce8e6;
+  color: #b42318;
+}
+
+.host-profile-message.success {
+  background: #e6f4ea;
+  color: #207443;
+}
+
+@media (max-width: 600px) {
+  .host-profile-section {
+    padding: 18px;
+  }
+
+  .host-profile-form {
+    grid-template-columns: 1fr;
+  }
+
+  .host-profile-heading {
+    align-items: flex-start;
+  }
+}

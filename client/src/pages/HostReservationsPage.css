@@ -1,0 +1,292 @@
+.host-reservations-page {
+  max-width: 1100px;
+  min-height: 65vh;
+  margin: 0 auto;
+  padding: 40px 25px 70px;
+  color: #222;
+}
+
+.host-reservations-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.host-reservations-heading h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+
+.host-reservations-heading p {
+  margin: 0;
+  color: #717171;
+}
+
+.host-reservations-back {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.host-reservations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.host-reservation-card {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 22px;
+  padding: 18px;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: white;
+}
+
+.host-reservation-image {
+  min-height: 190px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #f1f1f1;
+  color: #717171;
+  font-size: 13px;
+}
+
+.host-reservation-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 190px;
+  object-fit: cover;
+}
+
+.host-reservation-details {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.host-reservation-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.host-reservation-top h2 {
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.host-reservation-location {
+  margin: 0;
+  color: #717171;
+  font-size: 14px;
+}
+
+.host-reservation-status {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  color: #444;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.host-reservation-status.status-pending {
+  background: #fff4d6;
+  color: #805b00;
+}
+
+.host-reservation-status.status-confirmed {
+  background: #e6f4ea;
+  color: #207443;
+}
+
+.host-reservation-status.status-cancelled {
+  background: #fce8e6;
+  color: #b42318;
+}
+
+.host-reservation-status.status-completed {
+  background: #e8eaf6;
+  color: #3949ab;
+}
+
+.host-guest-information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.host-guest-information span {
+  color: #717171;
+  font-size: 13px;
+}
+
+.host-reservation-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 22px 0;
+}
+
+.host-reservation-dates div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.host-reservation-dates span {
+  color: #717171;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.host-reservation-dates strong {
+  font-size: 14px;
+}
+
+.host-reservation-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.host-reservation-total {
+  font-size: 17px;
+}
+
+.host-reservation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+}
+
+.host-view-property,
+.host-confirm-button,
+.host-cancel-button {
+  padding: 9px 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.host-confirm-button {
+  border-color: #ff385c;
+  background: #ff385c;
+  color: white;
+}
+
+.host-confirm-button:hover {
+  background: #e31c5f;
+}
+
+.host-cancel-button {
+  color: #b42318;
+}
+
+.host-view-property:hover,
+.host-cancel-button:hover {
+  border-color: #222;
+}
+
+.host-reservation-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.host-reservations-message {
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.host-reservations-message.error {
+  background: #fce8e6;
+  color: #b42318;
+}
+
+.host-reservations-message.success {
+  background: #e6f4ea;
+  color: #207443;
+}
+
+.host-reservations-empty,
+.host-reservations-status {
+  max-width: 850px;
+  min-height: 300px;
+  margin: 50px auto;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.host-reservations-empty p,
+.host-reservations-status p {
+  color: #717171;
+  line-height: 1.6;
+}
+
+.host-reservations-empty a,
+.host-reservations-status a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #d91b5c;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .host-reservations-page {
+    padding: 30px 16px 50px;
+  }
+
+  .host-reservations-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .host-reservation-card {
+    grid-template-columns: 1fr;
+  }
+
+  .host-reservation-image,
+  .host-reservation-image img {
+    min-height: 200px;
+  }
+
+  .host-reservation-top {
+    flex-direction: column;
+  }
+
+  .host-reservation-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

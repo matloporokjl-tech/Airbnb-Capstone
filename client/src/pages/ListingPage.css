@@ -1,0 +1,373 @@
+.listing-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 30px 70px;
+  color: #222;
+}
+
+.listing-heading h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.listing-subheading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+.listing-gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 190px 190px;
+  gap: 8px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.listing-main-image {
+  grid-row: 1 / 3;
+}
+
+.listing-main-image,
+.listing-small-image {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #eee;
+}
+
+.listing-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.listing-image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: #f1f1f1;
+  color: #777;
+  font-size: 13px;
+  text-align: center;
+}
+
+.listing-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(300px, 0.9fr);
+  gap: 55px;
+  align-items: start;
+  margin-top: 35px;
+}
+
+.listing-information section {
+  padding: 22px 0;
+}
+
+.listing-information h2 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.listing-intro {
+  padding-top: 0 !important;
+}
+
+.listing-intro p,
+.listing-description p,
+.listing-amenities p,
+.listing-house-details p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.listing-divider {
+  border-top: 1px solid #e5e5e5;
+}
+
+.listing-highlights > div {
+  margin-bottom: 22px;
+}
+
+.listing-highlights strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.listing-highlights p {
+  margin: 0;
+  color: #717171;
+  font-size: 14px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.amenities-grid span {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.listing-house-details > div {
+  margin: 20px 0;
+}
+
+.listing-house-details h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.booking-card {
+  position: sticky;
+  top: 25px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.booking-card h2 {
+  margin: 0 0 22px;
+  font-size: 25px;
+}
+
+.booking-card h2 span {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.booking-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #999;
+  border-radius: 9px 9px 0 0;
+  overflow: hidden;
+}
+
+.booking-dates label,
+.booking-guests {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 12px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.booking-dates label:first-child {
+  border-right: 1px solid #999;
+}
+
+.booking-dates input,
+.booking-guests select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: white;
+  font-size: 13px;
+  color: #333;
+}
+
+.booking-guests {
+  border: 1px solid #999;
+  border-top: none;
+  border-radius: 0 0 9px 9px;
+}
+
+.booking-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ff385c;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.booking-button:hover {
+  background: #e31c5f;
+}
+
+.booking-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.booking-note {
+  text-align: center;
+  color: #717171;
+  font-size: 12px;
+  margin: 15px 0 22px;
+}
+
+.booking-message {
+  margin: 14px 0;
+  color: #b42318;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.booking-message.success {
+  color: #167a3f;
+}
+
+.booking-price-breakdown {
+  border-top: 1px solid #ddd;
+  padding-top: 18px;
+}
+
+.booking-price-breakdown > div,
+.booking-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.booking-total {
+  border-top: 1px solid #ddd;
+  padding-top: 18px;
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.listing-status {
+  max-width: 900px;
+  min-height: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.listing-back-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #ff385c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .listing-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .booking-card {
+    position: static;
+  }
+
+  .listing-gallery {
+    grid-template-rows: 150px 150px;
+  }
+}
+
+@media (max-width: 550px) {
+  .listing-page {
+    padding: 25px 16px 50px;
+  }
+
+  .listing-heading h1 {
+    font-size: 22px;
+  }
+
+  .listing-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 220px 110px 110px;
+  }
+
+  .listing-main-image {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-subheading {
+    gap: 10px;
+  }
+}
+/* Meet the host link */
+.meet-host-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #d91b5c;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Host profile section */
+.listing-host-profile {
+  padding: 25px 0;
+  scroll-margin-top: 30px;
+}
+
+.listing-host-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.listing-host-photo {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f1f1f1;
+  color: #555;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.listing-host-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listing-host-heading h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.listing-host-heading strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.listing-host-heading p {
+  margin: 0;
+  color: #717171;
+  font-size: 13px;
+}
+
+.listing-host-bio {
+  margin-top: 18px;
+  color: #555;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
