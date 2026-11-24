@@ -11,10 +11,8 @@ import accommodationRoutes from "./routes/accommodationRoutes.js";
 import reservationRoutes from "./routes/reservationRoutes.js";
 
 const app = express();
+app.set("trust proxy", 1);
 
-// ========================================
-// SECURITY AND APPLICATION MIDDLEWARE
-// ========================================
 
 app.use(helmet());
 
